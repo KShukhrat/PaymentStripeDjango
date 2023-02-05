@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9h2r1p)@_wke%ug46eos_qh001y=(8yl2#cnjm#%1t3gj5vn^e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'store.apps.StoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -113,7 +114,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static files (css, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
